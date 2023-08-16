@@ -1,0 +1,302 @@
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+* {
+  font-family: Verdana;
+  word-spacing: 2px;
+  color: #f0f0f0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+mark {
+  color: black;
+  border-radius: 2px;
+  background-color: rgb(200, 200, 200);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+li {
+  list-style-type: upper-roman;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  color: #818181;
+  text-decoration: overline;
+}
+
+p {
+  text-align: left;
+}
+
+p.a {
+  font-family: "Segoe UI",Arial,sans-serif;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-weight: 400;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  border-collapse: collapse;
+  text-align: center;
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+  
+button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 1.5s
+}
+  
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+button:hover {
+  background-color: aqua !important;
+  color: black;
+  text-align: center;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: red;
+}
+
+img {
+  border: 1px black;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 8px 8px 8px rgba(255, 255, 255, 0.3);
+}
+
+.buttontwo{
+  background-color: black;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 20px; 
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-family: Calibri, serif;
+}
+
+.abc {
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+}
+
+.b {
+  border-left: 2px solid black;
+}
+
+.notification {
+  display: none;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.qwerty {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline rgb(255, 255, 255);
+  text-shadow: 8px 8px 8px rgba(255, 255, 255, 0.3);
+}
+
+ul.d {
+  text-align: center;
+  border-collapse: collapse;
+  border-radius: 10px;
+  font-size: 28px;
+}
+
+.sticky {
+  position: absolute;
+  position: sticky;
+  top: 20px;
+  left: 10px;
+  float: left;
+  padding: 10px;
+  background: rgb(133, 133, 133);
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.stickytwo {
+  position: absolute;
+  position: sticky;
+  top: 20px;
+  right: 10px;
+  float: right;
+  padding: 10px;
+  background: rgb(133, 133, 133);
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.content {
+  background-image: url('1621824608_25-phonoteka_org-p-kosmicheskii-fon-dlya-saita-25.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+/*Сделать красивее*/
+.sidenav {
+  height: 100%;
+  width: 163px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  font-family: calibri;
+  text-align: left;padding: 10px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #818181;
+  display: block;
+  font-family: calibri;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  font-family: calibri;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
